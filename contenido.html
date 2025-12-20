@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/ico-logo.ico">
+
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./css/preloader.css">
+
+    
+    <!------BTN RESPONSIVE HAMBURGUER CDN------------->
+    <link rel="stylesheet" href="css/hamburgers.css">
+
+    <!------ANIMATE CDN------------->
+    <link rel="stylesheet" href="css/animate.min.css">
+
+    <!------FONT AWESON CDN------------->
+    <script src="https://kit.fontawesome.com/b7fb745aab.js" crossorigin="anonymous"></script>
+
+    <!------SWIPER CDN------------->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/slader.css">
+
+    <!-------GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <title> PortafolioCode </title>
+</head>
+
+
+<body>
+
+      <div class="CONTENIDO_CONTENT">
+        <!--PRELOADER DE LA PAGINA STAR-->
+        <div class="loader" id="loader">
+
+          <div class="cssload-thecube">
+            <div class="cssload-cube cssload-c1"></div>
+            <div class="cssload-cube cssload-c2"></div>
+            <div class="cssload-cube cssload-c4"></div>
+            <div class="cssload-cube cssload-c3"></div>
+          </div>
+          <p class="text"> Portafolio<span class="codex">Code... </p>
+
+          <!--
+          <img src="img/rodaje.gif" class="rodaje">
+          <p style="color: #56fbd3;">Cargando portafolio...</p>
+          -->
+        </div>
+        <!--PRELOADER DE LA PAGINA END-->
+
+
+        <div class="MENU_CONTENT" id="menu">
+            <header class="header" id="contHeader">
+
+                <!--CONTENEDOR LOGO-->
+                <div class="header__base">
+                  <figure class="header_logo">
+                    <img src="img/LOGO/Nuevo Logo.png" alt="logo" style="width:100%;height:100%;" class="logo">
+                  </figure>
+                  <span class="header_logo_name"> Dennis Ponce</span>
+                </div>
+                
+                <!--CONTENEDOR MENU-->
+                <div class="contNavegador" id="contNavegador">
+
+                    <!--ICONO INICIO-->
+                    <a href="index.html" style="text-decoration: none;">
+                      <div class="contIcono_active">
+                        <i class="IconNombre fas fa-cogs"></i>
+                        <h2 class="contLetras">
+                          Inicio
+                        </h2>
+                      </div>
+                    </a>
+
+                      <!--ICONO PORTAFOLIO-->
+                      <a href="#portafolio" style="text-decoration: none;">
+                        <div class="contIcono">
+                          <i class="IconNombre  fas fa-address-card"></i>
+                          <h2 class="contLetras activar__submenu"> Portafolio </h2>
+                          <ul class="submenu">
+                            <div class="submenu__item">
+                              <a href="./landing.html">
+                                <h3 class="submenu__link"> Proyectos </h3>
+                                <figure class="submenu__img">
+                                  <img src="./img/menu__proyect.png" alt="imgProyect" style="width:100%;height:100%;">
+                                </figure>
+                              </a>
+                            </div>
+
+                            <div class="submenu__item">
+                              <a href="./retos.html">
+                                <h3 class="submenu__link"> Retos </h3>
+                                <figure class="submenu__img">
+                                  <img src="./img/menu__retos.png" alt="imgRetos" style="width:100%;height:100%;">
+                                </figure>
+                              </a>
+                            </div>
+
+                            <div class="submenu__item">
+                              <a href="">
+                                <h3 class="submenu__link"> Diseño </h3>
+                                <figure class="submenu__img">
+                                  <img src="./img/menu__diseño.png" alt="imgDesing" style="width:100%;height:100%;">
+                                </figure>
+                              </a>
+                            </div>
+
+
+                            <!--
+                            <li class="submenu__item"><a href="#" class="submenu__link"> RETOS</a></li>
+                            <li class="submenu__item"><a href="#" class="submenu__link"> PROYECTOS </a></li>
+                            <li class="submenu__item"><a href="#" class="submenu__link"> DISEÑO WEB </a></li>
+                            -->
+
+
+                          </ul> 
+                        </div>
+                      </a>
+
+                      <!--ICONO ACERCA-->
+                     <a href="#acerca" style="text-decoration: none;">
+                      <div class="contIcono">
+                        <i class="IconNombre fas fa-users-cog"></i>
+                        <h2 class="contLetras">
+                          Sobre mi
+                        </h2>
+                      </div>
+                     </a>
+                
+ 
+                     <!--ICONO HABILIDADES-->
+                     <a href="#habilidades" style="text-decoration: none;">
+                      <div class="contIcono">
+                        <i class="IconNombre fab fa-centos"></i>
+                        <h2 class="contLetras">
+                          Habilidades
+                        </h2>
+                      </div>
+                     </a>
+        
+         
+                     <!--ICONO CONTACTO-->
+                     <a href="#contacto" style="text-decoration: none;">
+                      <div class="contIcono">
+                        <i class="IconNombre fas fa-book-reader"></i>
+                        <h2 class="contLetras">
+                          Contacto
+                        </h2>
+                      </div>
+                     </a>
+
+
+                     <!--ICONO DIGITIZING-->
+                     <a href="https://digitizingcode.com/" style="text-decoration: none;">
+                      <div class="contIcono">
+                        <i class="IconNombre fas fa-chalkboard-teacher"></i>
+                        <h2 class="contLetras">
+                          DigitizingCode
+                        </h2>
+                      </div>
+                     </a>
+                
+                </div>
+          
+                <!--BTN RESPONSIVE-->
+                <div class="header_btnResponsive" id="btnResponsive">
+                  <button class="hamburger hamburger--emphatic" type="button">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                  </button>   
+                </div>
+            </header>
+        </div>
+
+
+        <div class="ABOUT_CONTENT" id="acerca">
+              <div id="cont_descripcion_foto">
+                <div class="contBase">
+
+                  <!--CONTENEDOR QUIEN SOY-->
+                  <div class="contenedor_izq">
+                    <h2 class="titulo_acerca" id="titulo_acerca">¡Hola!</h2>
+                     
+                    <div class="contenedorIzq_parrBtn">
+                      <p class="descripcion_acerca
+                        wow animate__animated animate__fadeIn" style="animation-duration: 5s;">
+                        Bienvenido a mi portafolio, aquí encontrarás algunos de los proyectos y retos que he venido realizando a lo largo de mi carrera, soy freelancer, autodidacta y mi trabajo está dirigido al desarrollo de interfaces web aplicando distintas tecnologías, con el pasar del tiempo y con mucho estudio logré obtener habilidades en diseño grafico y desarrollar soluciones digitales desde cero, lo que me permite tener un control casi total sobre la apariencia visual de mis proyectos.
+                        
+                        <!--
+                        Como desarrollador web, implemento tecnologías de programación como HTML, CSS, JavaScript y React JS, tambien utilizo frameworks y librerías externos entre otras plataformas para crear sitios web estáticos y dinámicos.  -->
+
+                        <br><br>
+                        <!--
+                        Como diseñador gráfico puedo crear logotipos, elementos gráficos y diseños de
+                        interfaz de usuario, también trabajo en la creación de materiales 
+                        impresos y digitales que complementan y refuerzan la identidad visual.-->
+
+                        
+                      </p>
+
+                      <a href="https://tarjetadigital.digitizingcode.com/" target="_blank">
+                        <button class="btnAcerca
+                          wow animate__animated animate__fadeIn" style="animation-duration: 7s;">Tarjeta digital 
+                          <i class="iconAB fa-solid fa-users-viewfinder"></i>
+                        </button>
+                      </a>   
+                      <!--
+                      <a href="https://antonmarchitec.github.io/Hoja_de_vida/" target="_blank">
+                        <button class="btnAcerca
+                        wow animate__animated animate__fadeIn" style="animation-duration: 7s;">Curriculum web <i class="iconAB fa-solid fa-file-contract"></i></button>
+                      </a> -->  
+                    </div>
+                  </div>
+        
+                  <!--CONTENEDOR FOTO-->
+                  <div class="contenedor_der">
+                    <div class="contenedor_der_image">
+                      <figure class="foto">
+                       <img src="./img/foto.jpg" alt="foto" style="width: 100%; height:100%;">
+                      </figure>
+
+                      <h2 class="contenedor_der_name"> Dennis Ponce</h2>
+                    </div>
+                    
+                  </div>
+
+                </div>
+
+                <div class="cont_descripcion_foto_gradient"></div>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#0c1b32" fill-opacity="1" d="M0,224L0,160L36.9,160L36.9,224L73.8,224L73.8,32L110.8,32L110.8,224L147.7,224L147.7,288L184.6,288L184.6,192L221.5,192L221.5,64L258.5,64L258.5,224L295.4,224L295.4,64L332.3,64L332.3,160L369.2,160L369.2,96L406.2,96L406.2,160L443.1,160L443.1,288L480,288L480,224L516.9,224L516.9,192L553.8,192L553.8,288L590.8,288L590.8,128L627.7,128L627.7,96L664.6,96L664.6,288L701.5,288L701.5,64L738.5,64L738.5,224L775.4,224L775.4,128L812.3,128L812.3,32L849.2,32L849.2,0L886.2,0L886.2,64L923.1,64L923.1,32L960,32L960,320L996.9,320L996.9,224L1033.8,224L1033.8,320L1070.8,320L1070.8,96L1107.7,96L1107.7,256L1144.6,256L1144.6,160L1181.5,160L1181.5,64L1218.5,64L1218.5,64L1255.4,64L1255.4,320L1292.3,320L1292.3,160L1329.2,160L1329.2,96L1366.2,96L1366.2,32L1403.1,32L1403.1,128L1440,128L1440,0L1403.1,0L1403.1,0L1366.2,0L1366.2,0L1329.2,0L1329.2,0L1292.3,0L1292.3,0L1255.4,0L1255.4,0L1218.5,0L1218.5,0L1181.5,0L1181.5,0L1144.6,0L1144.6,0L1107.7,0L1107.7,0L1070.8,0L1070.8,0L1033.8,0L1033.8,0L996.9,0L996.9,0L960,0L960,0L923.1,0L923.1,0L886.2,0L886.2,0L849.2,0L849.2,0L812.3,0L812.3,0L775.4,0L775.4,0L738.5,0L738.5,0L701.5,0L701.5,0L664.6,0L664.6,0L627.7,0L627.7,0L590.8,0L590.8,0L553.8,0L553.8,0L516.9,0L516.9,0L480,0L480,0L443.1,0L443.1,0L406.2,0L406.2,0L369.2,0L369.2,0L332.3,0L332.3,0L295.4,0L295.4,0L258.5,0L258.5,0L221.5,0L221.5,0L184.6,0L184.6,0L147.7,0L147.7,0L110.8,0L110.8,0L73.8,0L73.8,0L36.9,0L36.9,0L0,0L0,0Z"></path>
+              </svg>
+        </div>
+
+
+        <div class="TITLE_PORTFOLIO" id="portafolio">
+          <div class="containerPortfolio">
+             <div class="containerPortfolio_blockA">
+
+             </div>
+             <h1 class="containerPortfolio_title 
+             wow animate__animated animate__fadeInUp" style="animation-duration: 1.5s;" >Portfolio</h1>
+             <div class="containerPortfolio_blockB">
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="PORTAFOLIO_NEW">
+          <div class="containerNew" id="baseContainerNew">
+            <!-------------------
+            <div class="newBaseCuadro" id="newBaseCuadro">
+              <figure class="containerNew_figure">
+                <img src="./img/IMG_TEMPLATES/GAMER_TEMPLATE.jpg" alt="image_one" style="width: 100%;height:100%;" class="newFigure">
+              </figure>
+
+              <section class="containerNew_cuadroBase">
+                <div class="caja1">
+                  <h2 class="box-dos_texto"> Landing Page </h2>
+                </div>
+
+                <figure class="caja2">
+                  <i class="imageIconos fa-regular fa-eye"></i>
+                </figure>
+
+                <div class="caja3">
+                  <i class="imageIconos fa-regular fa-images"></i>
+                </div>
+
+                <figure class="caja4">
+                  <h2 class="box-dos_texto"> GitHub </h2>
+                </figure>
+                
+              </section>
+            </div>
+            --->
+            
+          </div>
+
+          <template id="templatePortafolio">
+            <div class="baseTemplate" id="baseTemplate">
+              <!-------------------->
+              <div class="newBaseCuadro" id="newBaseCuadro">
+                <!--Bloque imagen fondo-->
+                <figure class="containerNew_figure">
+                  <img src="" alt="" style="width: 100%;height:100%;" id="newFigureFondo">
+                </figure>
+  
+                <!--Bloque cuadro contenido-->
+                <section class="containerNew_cuadroBase">
+                  <div class="caja1">
+                    <h2 class="box-dos_texto" id="title1"> Landing Page </h2>
+                  </div>
+  
+                  <figure class="caja2">
+                    <i class="imageIconos fa-regular fa-eye" id="iconOjo"></i>
+                  </figure>
+  
+                  <div class="caja3">
+                    <i class="imageIconos fa-brands fa-github" id="iconPhoto"></i>
+                  </div>
+  
+                  <figure class="caja4">
+                    <h2 class="box-dos_texto" id="title2"> GitHub </h2>
+                  </figure>
+                  
+                </section>
+              </div>
+              
+            </div>
+          </template>
+        </div>
+
+
+        <div class="SERVICES_TITLE" id="servicios">
+          <div class="containerServices">
+            <div class="containerServices_blockA">
+
+            </div>
+            <h1 class="containerServices_title
+            wow animate__animated animate__fadeInUp" style="animation-duration: 1.5s;">Services</h1>
+            <div class="containerServices_blockB">
+
+           </div>
+          </div>
+        </div>
+
+
+        <div class="SERVICES_CONTENT" > 
+          <div id="contBase">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+              <path fill="#000000" fill-opacity="1" d="M0,64L0,96L40,96L40,96L80,96L80,64L120,64L120,256L160,256L160,160L200,160L200,256L240,256L240,224L280,224L280,64L320,64L320,192L360,192L360,320L400,320L400,96L440,96L440,96L480,96L480,96L520,96L520,224L560,224L560,288L600,288L600,256L640,256L640,64L680,64L680,256L720,256L720,288L760,288L760,224L800,224L800,128L840,128L840,64L880,64L880,288L920,288L920,128L960,128L960,64L1000,64L1000,0L1040,0L1040,32L1080,32L1080,192L1120,192L1120,256L1160,256L1160,224L1200,224L1200,224L1240,224L1240,160L1280,160L1280,256L1320,256L1320,32L1360,32L1360,64L1400,64L1400,160L1440,160L1440,0L1400,0L1400,0L1360,0L1360,0L1320,0L1320,0L1280,0L1280,0L1240,0L1240,0L1200,0L1200,0L1160,0L1160,0L1120,0L1120,0L1080,0L1080,0L1040,0L1040,0L1000,0L1000,0L960,0L960,0L920,0L920,0L880,0L880,0L840,0L840,0L800,0L800,0L760,0L760,0L720,0L720,0L680,0L680,0L640,0L640,0L600,0L600,0L560,0L560,0L520,0L520,0L480,0L480,0L440,0L440,0L400,0L400,0L360,0L360,0L320,0L320,0L280,0L280,0L240,0L240,0L200,0L200,0L160,0L160,0L120,0L120,0L80,0L80,0L40,0L40,0L0,0L0,0Z"></path>
+            </svg>
+
+            <div class="containerBaseCuadros" id="containerBaseCuadros">
+               <!--------------PRIMER CUADRO---------------------->
+              
+
+              <!--------------TEMPLATE CUADRO---------------------->
+              <template id="templateCuadro">
+                <div class="contCuadro
+                 wow animate__animated animate__fadeIn">
+                  <div class="contCuadro_imagen">
+                    <img src="" alt="" style="width:100%; height:100%;" id="imgServices">
+                  </div>
+
+                  <div class="contCuadro_descripcion">
+                    <h2 class="contCuadro_title" id="contCuadro_title">SITIOS WEB Y LANDING PAGE</h2>
+                    <p class="contCuadro_parrafo" id="contCuadro_parrafo">
+                      Diseño de sitios web y landing page totalmente personalizados con adaptabilidad a cualquier resolución: equipos de escritorio, tablet y dispositivos móviles.       
+                    </p>
+                    <a href="planes.html"><button class="btnPlanes"> Ver planes</button></a>
+                  </div> 
+                </div>
+              </template>
+          
+             
+            </div>
+
+            <div class="contBase_gradient">
+
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="TILTE_SKILLS" id="habilidades"> 
+            <div class="containerSkills">
+              <div class="containerSkills_blockA">
+ 
+              </div>
+              <h1 class="containerSkills_title
+              wow animate__animated animate__fadeInUp" style="animation-duration: 1.5s;">Skills</h1>
+              <div class="containerSkills_blockB">
+ 
+             </div>
+           </div>
+          
+        </div>
+
+        <!--FROM DESKTOP-->
+        <div class="SKILLS_CONT">
+          <div class="contenedorSkills" id="contadores">
+
+            <div class="contenedorSkills_box">
+              <div class="box_numero" data-total="85"> 0 </div><span class="spanNumero"> % </span>
+
+              <section class="box_cajaBase">
+
+                <figure class="cajaBaseImage">
+                 <i class="iconsTech fa-brands fa-html5"></i>
+                </figure>
+                
+                <p class="cajaLegenda"> HTML5 </p>
+
+              </section>
+            </div>
+
+            <div class="contenedorSkills_box">
+              <div class="box_numero" data-total="60"> 0 </div><span class="spanNumero"> % </span>
+
+              <section class="box_cajaBase">
+
+                <figure class="cajaBaseImage">
+                  <i class="iconsTech fa-brands fa-css3"></i>
+                </figure>
+                
+                <p class="cajaLegenda"> CSS3 </p>
+
+              </section>
+            </div>
+
+            <div class="contenedorSkills_box">
+              <div class="box_numero" data-total="42"> 0 </div><span class="spanNumero"> % </span>
+
+              <section class="box_cajaBase">
+
+                <figure class="cajaBaseImage">
+                  <i class="iconsTech fa-brands fa-square-js"></i>
+                </figure>
+                
+                <p class="cajaLegenda"> JavaScript </p>
+
+              </section>
+            </div>
+
+            <div class="contenedorSkills_box">
+              <div class="box_numero" data-total="52"> 0 </div><span class="spanNumero"> % </span>
+
+              <section class="box_cajaBase">
+
+                <figure class="cajaBaseImage">
+                  <i class="iconsTech fa-brands fa-sass"></i>
+                </figure>
+                
+                <p class="cajaLegenda"> Sass </p>
+
+              </section>
+            </div>
+
+
+
+
+              <div class="contenedorSkills_box">
+              <div class="box_numero" data-total="48"> 0 </div><span class="spanNumero"> % </span>
+
+              <section class="box_cajaBase">
+
+                <figure class="cajaBaseImage">
+                  <i class="iconsTech fa-brands fa-bootstrap"></i>
+                </figure>
+                
+                <p class="cajaLegenda"> Bootstrap </p>
+
+              </section>
+            </div>
+
+
+            <div class="contenedorSkills_box">
+              <div class="box_numero" data-total="50"> 0 </div><span class="spanNumero"> % </span>
+
+              <section class="box_cajaBase">
+
+                <figure class="cajaBaseImage">
+                  <i class="iconsTech fa-brands fa-git-alt"></i>
+                </figure>
+                
+                <p class="cajaLegenda"> Git </p>
+
+              </section>
+            </div>
+
+            <div class="contenedorSkills_box">
+              <div class="box_numero" data-total="62"> 0 </div><span class="spanNumero"> % </span>
+
+              <section class="box_cajaBase">
+
+                <figure class="cajaBaseImage">
+                  <i class="iconsTech fa-brands fa-github"></i>
+                </figure>
+                
+                <p class="cajaLegenda"> GitHub </p>
+
+              </section>
+            </div>
+
+            <div class="contenedorSkills_box">
+              <div class="box_numero" data-total="23"> 0 </div><span class="spanNumero"> % </span>
+
+              <section class="box_cajaBase">
+
+                <figure class="cajaBaseImage">
+                  <i class="iconsTech fa-brands fa-react"></i>
+                </figure>
+                
+                <p class="cajaLegenda"> React JS </p>
+
+              </section>
+            </div>
+              
+          </div>
+        </div>
+
+          
+        <div class="CONTACT_TITLE" id="contacto">
+          <section class="conatinerTitle">
+            <div class="conatinerTitle_blockA">
+
+            </div>
+            <div class="conatinerTitle_nameBig">
+              <h1 class="nameBig
+              wow animate__animated animate__fadeInUp" style="animation-duration: 1.5s;">Contact</h1>
+            </div>
+            <div class="conatinerTitle_blockB">
+
+            </div>
+          </section>
+        </div>
+   
+        <div class="CONTACT_CONTENT" >
+          <div class="contContact" id="basecontacto">
+            <div class="contContact_gradient">
+
+            </div>
+            
+            <form action="enviar.php" method="POST" class="formulario"  onsubmit="return validar();">
+             <div class="contDatosPersonales">
+                  <div class="contCampos">
+
+                    <!--CAMPO NOMBRE-->
+                    <div class="campoInput">
+                      <label for="nombre"> Nombre Completo: </label>
+                      <input type="text" name="nombre" placeholder="Antonio Ponce" 
+                             class="input" id="nombre" >
+                    </div>
+        
+                    <!--CAMPO EMAIL-->
+                    <div class="campoInput">
+                      <label for="correo"> Email: </label>
+                      <input type="text" name="email" placeholder="example@gmail.com" 
+                             class="input" id="correo" >
+                    </div>
+        
+                    <!--CAMPO CELULAR-->
+                    <div class="campoInput">
+                      <label for="celular"> Celular: </label>
+                      <input type="text" name="celular" placeholder="524 + 785400012" 
+                             class="input" id="celular" >
+                    </div>
+                  </div>
+
+                  <div class="campoTextarea">
+                    <label for="miText"> Escribe un comentario. </label> 
+                    <textarea  name="comentario" placeholder="Coloca un comentario" cols="0" rows="7" class="textarea" id="miText"></textarea>
+                  </div>     
+             </div>
+
+             <button type="submit" class="btnEnviar">Enviar comentario</button>
+            </form>
+          </div>     
+        </div> 
+ 
+        <div div class="PIE_CONTENT">
+          <div class="contPie">
+            <div class="contPie_cont">
+              <div class="boxing1">     
+              </div>
+ 
+              <ul class="contPie_ul">
+               <li class="contPie_ul_li"><a href="landing.html" class="contPie_ul_li_a"> Mas proyectos</a></li>
+               <li class="contPie_ul_li"><a href="retos.html" class="contPie_ul_li_a"> Retos frontend</a></li>
+               <li class="contPie_ul_li"><a href="https://digitizingcode.com/" class="contPie_ul_li_a"> DigitizingCode</a></li>
+              </ul>
+            </div>
+
+            <div class="caja_pie">
+              <p class="caja_pie_derechos_text">
+                ©copyrights reserved 2024 || <br> <span class="ap"> Dennis Ponce - DigitizingCode</span>
+              </p>
+             </div>
+        
+          </div>
+        </div>
+
+      </div>
+      
+      <!-------------------FIN DE GRILLA----------------->
+
+      <div class="contBtnTop" >
+        <a href="#menu"><i class="iconTop fas fa-caret-square-up" id="iconTop"></i></a>
+      </div>
+
+      <a href="https://wa.me/+59170856061?text=Hola%20necesito%20información">
+        <div class="btnWattssap">
+          <p class="btnWattssap__text"> Contacto </p>
+          <i class="iconWatsap fa-brands fa-whatsapp"></i>
+        </div>
+      </a>
+
+
+      <div class="contRedes" id="block_redes">
+        <a href="https://www.facebook.com/digitizingCode/" target="_blank">
+          <div class="contRedes_box">
+            <i class="IconRed fab fa-facebook-square"></i> <span class="textRedes"> Facebook</span>
+          </div>
+        </a>
+
+        <a href="https://www.instagram.com/digitizingcode/" target="_blank">
+        <div class="contRedes_box">
+          <i class="IconRed fab fa-instagram-square"></i> <span class="textRedes"> Instagram</span>
+        </div>
+        </a>
+
+        <a href="https://linkedin.com/in/antonio-dennis-ponce-salazar-255243225" target="_blank">
+          <div class="contRedes_box">
+            <i class="IconRed fab fa-linkedin" target="_blank"></i> <span class="textRedes"> Linkedin</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/Antonmarchitec" target="_blank">
+          <div class="contRedes_box">
+            <i class="IconRed fa-brands fa-github"></i> <span class="textRedes"> GitHub </span>
+          </div>
+        </a>
+
+        <a href="https://www.youtube.com/channel/UCElch2zsoBX7PzHxa6I53rQ" target="_blank">
+          <div class="contRedes_box">
+            <i class="IconRed fab fa-youtube"></i><span class="textRedes"> YouTube</span>
+          </div>
+        </a>
+
+      </div>
+  
+        
+        
+      
+    <!--SCRIPTS MENU
+    <script src="mis_scripts/menu.js"></script>-->
+
+    <script src="./mis_scripts/menu2.js"></script>
+    
+    <!--SCRIPTS BTN TOP-->
+    <script src="mis_scripts/btnTop.js"></script>
+
+    <!--SCRIPTS MENU-->
+    <!--<script src="mis_scripts/proyectos.js"></script>-->
+    <script src="./mis_scripts/titleMovi.js"></script>
+    <script src="./mis_scripts/templates/templates_services.js"></script>
+    <script src="./mis_scripts/Blog.js"></script>
+    <script src="./mis_scripts/block_redes.js"></script>
+    <script src="mis_scripts/validarForm.js"></script>
+    <script src="./mis_scripts/templates/templates_portafolio.js"></script>
+    <script src="./mis_scripts/skills.js"></script>
+
+     <!--SCRIPT DE EFECTO PRELOADER-->
+     <script src="mis_scripts/preloader.js"></script>
+
+    <!--SCRIPT DE ANIMATION EL SCROLLING-->
+    <script src="mis_scripts/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <!--SCRIPT DE BTN HAMBURGUESA-->
+    <script src="mis_scripts/hamburguesa.js"></script>
+    
+    <!--SCRIPT DE SWITCH ALERT -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+
+    <!--SCRIPT DE SWIPER-->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./mis_scripts/slader.js"></script>
+
+</body>
+</html>

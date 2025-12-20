@@ -1,0 +1,149 @@
+@use "../variables";
+
+.containerSkills{
+    width: 100%;
+    height: 250px;
+    background: variables.$colorNegro;
+    position: relative;
+    overflow: hidden;
+    transform: skewX(-5deg);
+    .containerSkills_blockA{
+       width: 100%;
+       height: 250px;
+       background:linear-gradient(variables.$colorNegro,transparent);
+    }
+
+    .containerSkills_title{
+         color: variables.$colorVerde;
+         font-size: 140px;
+         font-weight: 500;
+         position: absolute;
+         bottom: -30px;
+         left:100px;
+         z-index: 0;
+         letter-spacing:variables.$letterSpacing;
+         font-family: "Oswald", sans-serif;
+         font-optical-sizing: auto;
+
+    }
+
+    .containerSkills_blockB{
+        width: 100%;
+        height: 250px;
+        background:linear-gradient( transparent,variables.$colorNegro);
+        position: absolute;
+        bottom: -2px;
+        z-index: 1;
+    }
+}
+
+
+
+@media (min-width:641px)  and (max-width:769px){
+    .containerSkills{
+        width: 100%;
+        height: 250px;
+        background: variables.$colorNegro;
+        position: relative;
+        overflow: hidden;
+        transform: skewX(-5deg);
+        .containerSkills_blockA{
+           width: 100%;
+           height: 250px;
+           background:linear-gradient(variables.$colorNegro,transparent);
+        }
+    
+        .containerSkills_title{
+             color: variables.$colorVerde;
+             font-size: 140px;
+             position: absolute;
+             bottom: -30px;
+             left:60px;
+             z-index: 0;
+             letter-spacing:variables.$letterSpacing;
+    
+        }
+    
+        .containerSkills_blockB{
+            width: 100%;
+            height: 250px;
+            background:linear-gradient( transparent,variables.$colorNegro);
+            position: absolute;
+            bottom: -2px;
+            z-index: 1;
+        }
+    }
+
+}
+
+
+
+@media (min-width:481px)  and (max-width:640px){
+    .containerSkills{
+        width: 100%;
+        height: 200px;
+        background: variables.$colorNegro;
+        position: relative;
+        overflow: hidden;
+        transform: skewX(-5deg);
+        .containerSkills_blockA{
+           width: 100%;
+           height: 200px;
+           background:linear-gradient(variables.$colorNegro,transparent);
+        }
+    
+        .containerSkills_title{
+             color: variables.$colorVerde;
+             font-size: 120px;
+             position: absolute;
+             bottom: -30px;
+             left:60px;
+             z-index: 0;
+             letter-spacing:variables.$letterSpacing;
+    
+        }
+    
+        .containerSkills_blockB{
+            width: 100%;
+            height: 200px;
+            background:linear-gradient( transparent,variables.$colorNegro);
+            position: absolute;
+            bottom: -2px;
+            z-index: 1;
+        }
+    }
+
+}
+
+
+
+
+@media (min-width:320px) and (max-width:480px) {
+    .containerSkills{
+        width: 100%;
+        height: 200px;
+        background: variables.$colorNegro;
+        position: relative;
+        overflow: hidden;
+        transform: skewX(-5deg);
+        margin-top: -60px;
+        .containerSkills_blockA{
+           display: none;
+        }
+    
+        .containerSkills_title{
+             color: variables.$colorVerde;
+             font-size:75px;
+             position: absolute;
+             bottom: 15px;
+             left: calc(50% - 150px);
+             z-index: 0;
+             letter-spacing: -3px;
+        }
+    
+        .containerSkills_blockB{
+            display: none;
+        }
+    }
+}
+

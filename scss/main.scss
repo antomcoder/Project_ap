@@ -1,0 +1,104 @@
+@use "variables";
+
+@use "menu";
+//@use "grid_paginaFrontal";
+@use "paginaFrontal";
+@use "gridContent";
+@use "about";
+@use "contact";
+@use "btnTop";
+@use "preloader";
+@use "pie";
+@use "barras";
+@use "switchAlert";
+@use "grid_retos";
+@use "retos";
+@use "landing"; 
+@use "btnWatt";
+@use "block_redes";
+
+
+//ESTILOS PORTAFOLIO
+@use "../scss/portfolio/title";
+@use "../scss/portfolio/portafolioNew";
+
+//ESTILOS SERVICIOS
+@use "../scss/services/titleServices";
+@use "../scss/services/services";
+
+//ESTILOS SKILLS
+@use "../scss/skills/skillsCont";
+@use "../scss/skills/titleSkills";
+
+
+//ESTILOS CONTACT
+@use "../scss/contact/contactTitle";
+
+
+//ESTILOS BLOGGER
+@use "../scss/blog/blogGrilla";  
+@use "../scss/blog/contBlogTop";
+@use "../scss/blog/contBlogMenu";
+@use "../scss/blog/contBlogHeader";
+@use "../scss/blog/contBlogBloggers";
+@use "../scss/blog/contBlogSidebar";
+@use "../scss/blog/contBlogFooter";
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight:300;
+    font-style:normal;
+    font-size: 16px;
+    
+    /*   200    700
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    */
+
+    /*
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+    */
+    /*
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    */
+}
+
+
+html{
+    scroll-behavior:smooth;
+
+}
+
+body::-webkit-scrollbar{
+    width: 8px;
+    
+}
+body::-webkit-scrollbar-thumb{
+    background: variables.$colorVerde;
+    border-radius: 2px;
+
+    height: 80px;
+    transition: 5s ease-in-out;
+}
+body::-webkit-scrollbar-thumb:hover{
+    cursor: pointer;
+    height: 100px;
+
+}
+
+
+

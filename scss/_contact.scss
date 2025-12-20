@@ -1,0 +1,181 @@
+@use "variables";
+
+
+.contContact{
+   width: 100%;
+   background: variables.$colorAzul;
+   padding-bottom:50px;
+   .contContact_gradient{
+      width: 100%;
+      height: 50px;
+      background: linear-gradient(variables.$colorNegro, transparent);
+   }
+
+   .formulario{
+       width:80%;
+       margin: auto;
+       padding: 20px 0px;
+      
+       .contDatosPersonales{
+         width: 100%;
+         padding: 20px 0px;
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         align-items: flex-start;
+         .contCampos{
+            width: 50%;
+            label{
+               color: white;
+               font-weight:300 ;
+               font-size:22px;
+            }
+
+            .campoInput{
+               width: 100%;
+               margin-bottom: 10px;
+               .input{
+                  margin-top: 5px;
+                  width: 100%;
+                  padding: 5px 10px;
+                  background: transparent;
+                  color: rgb(255, 255, 255);
+                  font-size: 16px;
+                  font-weight: 300;
+                  outline: 1px solid transparent;
+                  border: 1px solid variables.$colorVerde;
+                  border-radius: 2px;
+               }
+               .input:focus{
+                  outline: 1px solid variables.$colorVerde;
+               }
+               //ESTOS DOS FUNCIONAN CON EL "recuired"
+               .input[required]:valid{
+                  outline: 1px solid variables.$colorVerde;
+               }
+               .input[required]:invalid{
+                  outline: 1px solid variables.$colorRojo;
+               }
+            }
+           
+         }
+
+
+         .campoTextarea{
+            width: 45%;
+            border-radius: 2px;
+            label{
+               color: white;
+               font-size:22px;
+               font-weight: 300;
+            }
+            .textarea{
+               margin-top: 5px;
+               padding: 5px 10px;
+               border-radius: 3px;
+               min-width:100%;
+               max-width:100%;
+               border:1px solid variables.$colorVerde;
+               outline: none;
+               color: rgb(255, 255, 255);
+               font-weight: 300;
+               background: transparent;
+               resize: none;
+            }  
+         }
+      }
+      .btnEnviar{
+         width:280px;
+         font-weight: 100;
+         padding: 5px 10px;
+         background: variables.$colorAzulOscuro;
+         border: 1px solid variables.$colorVerde;
+         border-radius: 2px;
+         margin-left: calc(80% - 180px);
+         color: white;
+         transition: 0.2s all;
+         cursor: pointer;
+      }
+      .btnEnviar:hover{
+         background: variables.$colorAzul;
+         color: white;
+         border: 1px solid white;
+
+      }
+   } 
+}
+
+
+
+
+
+
+
+@media (min-width:320px) and (max-width:720px) {
+   .contContact{
+      width: 100%;
+      background: variables.$colorAzul;
+      padding-bottom:50px;
+      .contContact_gradient{
+         width: 100%;
+         height: 50px;
+         background: linear-gradient(variables.$colorNegro, transparent);
+      }
+   
+      .formulario{
+          width:100%;
+          padding: 0px 20px;
+         .contDatosPersonales{
+            width: 100%;
+            padding: 20px 0px;
+            margin-top: 20px;
+            //background: violet;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .contCampos{
+               width: 100%;
+               padding: 5px 0px;
+              
+            }
+            .campoTextarea{
+               width: 100%;
+               padding: 5px 0px;
+               
+               .campoTextareaTitle{
+                  color: variables.$colorCelesteOscuro;
+               }
+               .textarea{
+                  margin: 10px auto;
+                  width: 100%;
+                  padding: 10px;
+                  max-width:100%;
+                  min-width:100%;
+                  max-height:150px;
+                  min-height: 150px;
+                  resize: none;
+               }  
+            }
+         }
+         .btnEnviar{
+            width:100%;
+            font-weight: 100;
+            padding: 5px 10px;
+            background:variables.$colorAzul;
+            border: 1px solid variables.$colorVerde;
+            border-radius: 2px;
+            margin-left:0;
+            color: white;
+            transition: 0.2s all;
+            cursor: pointer;
+         }
+   
+      }
+      
+   }
+   
+}
+
+

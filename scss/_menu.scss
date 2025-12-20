@@ -1,0 +1,354 @@
+@use "variables";
+/*******ESTILOS DEL MENU*****/
+/*******ESTILOS DEL MENU*****/
+/*******ESTILOS DEL MENU*****/
+/*******ESTILOS DEL MENU*****/
+.header {
+    background:variables.$colorAzul;
+    transition: 0.5s all;
+    width: 100%;
+    box-shadow: 0px 2px 10px black;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+
+      //BLOCK LOGO
+      .header__base{
+        width: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 20px;
+        .header_logo{
+          width: 85px;
+          height:40px;
+        }
+
+        .header_logo_name{
+          color: white;
+          transform: skew(-5deg);
+          font-weight: 600;
+          font-size: 18px;
+        }
+      }
+      
+
+      //BLOCK NAVEGADOR
+      .contNavegador{
+        width:570px;
+        padding: 10px 0px;
+        margin-right: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        .contIcono_active{
+          width: 100px;
+          padding: 5px 20px;
+          .IconNombre{
+            color: variables.$colorVerde;
+            font-size: 20px;
+          }
+          .contLetras{
+            margin-top: 4px;
+            font-size: 14px;
+            font-weight: 300;
+            color: variables.$colorVerde;
+            transform: skewX(-5deg);
+
+          }
+        }
+
+        .contIcono{
+          width: 100px;
+          padding: 5px 0px;
+          position: relative;
+          z-index: 0;
+          .IconNombre{
+            color: variables.$colorCelesteOscuro;
+            font-size: 20px;
+          }
+
+          .contLetras{
+            margin-top: 4px;
+            font-size: 14px;
+            font-weight: 300;
+            color: variables.$colorVerde;
+            transform: skewX(-5deg);
+
+          }
+
+          .submenu{
+            width: 600px;
+            background:variables.$colorAzul;
+            border-radius: 0px 0px 10px 10px;
+            box-shadow: 0px 5px 5px black;
+            padding: 10px;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            position: absolute;
+            top:60px;
+            right:-300px;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.2s linear;
+            .submenu__item{
+              width: 180px;
+              padding:20px;
+              border-radius: 10px;
+              background: variables.$colorAzul;
+              margin: 3px 0px;
+              box-shadow: 0px 0px 2px;
+              transition: 0.2s all;
+              .submenu__link{
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: 300;
+                color: variables.$colorVerde;
+                text-align: start;
+                transform: skewX(-5deg);
+              }
+
+              .submenu__img{
+                margin-top: 5px;
+                width: 100%;
+                height: 130px;
+              }
+            }
+
+            .submenu__item:hover{
+              background:variables.$colorAzulOscuro;
+            }
+          }
+
+          &:hover{        
+              .submenu{
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(5px);
+              }
+          }
+          
+        }
+
+        .contIcono:hover{
+          background:transparent ;
+          .IconNombre{
+            color: variables.$colorVerde;
+            font-size: 20px;
+          }
+        }
+      }
+
+      //BLOCK BTN RESPONSIVE
+      .header_btnResponsive{
+        /*width: 40px;
+        height: 40px;
+        background: rgb(31, 122, 122); */
+        display: none;
+      }
+}
+.contHeader_js{
+  box-shadow: 0px 2px 20px variables.$colorVerde;
+}
+
+
+
+
+
+
+
+
+@media (min-width:320px) and (max-width:850px) {
+  .header {
+    background:variables.$colorAzulOscuro;
+    width: 100%;
+    box-shadow: 0px 2px 10px black;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left:0;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    transition: 0.5s all;
+
+
+      //BLOCK LOGO
+      .header__base{
+        width: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 20px;
+        .header_logo{
+          width: 85px;
+          height:40px;
+        }
+
+        .header_logo_name{
+          color: white;
+          transform: skew(-5deg);
+          font-weight: 600;
+          font-size: 18px;
+        }
+      }
+
+      //BLOCK NAVEGADOR
+      .contNavegador{
+        width:160px;
+        padding: 15px 0px;
+        margin-right: 0;
+        background:variables.$colorAzulOscuro;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: initial;
+        position: absolute;
+        top: 75px;
+        left: initial;
+        transform: translateX(-100%);
+        transition: 0.8s;
+
+        .contIcono_active{
+          width: 160px;
+          padding: 15px 20px;
+          background:variables.$colorAzulOscuro;
+          .IconNombre{
+            color: variables.$colorVerde;
+            font-size: 20px;
+          }
+          .contLetras{
+            font-size: 14px;
+            color: variables.$colorVerde;
+            font-weight: 300;
+          }
+        }
+
+        .contIcono{
+          width: 160px;
+          padding: 15px 20px;
+          position: relative;
+          background: variables.$colorAzul;
+          transition: 0.5s all;
+          z-index: 200;
+          .IconNombre{
+            color: variables.$colorCelesteOscuro;
+            font-size: 20px;
+          }
+
+          .contLetras{
+            margin-top: 0px;
+            font-size: 14px;
+            color: variables.$colorVerde;
+          }
+
+          .submenu{
+            width: 150px;
+            background:variables.$colorAzulOscuro;
+
+            padding: 10px;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content:flex-start;
+            align-items: center;
+            position: absolute;
+            top:-167px;
+            right:initial;
+            left: 149px;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.5s all;
+            z-index: 100;
+            .submenu__item{
+              width: 100%;
+              padding:20px;
+              border-radius: 10px;
+              background: variables.$colorAzul;
+              margin: 3px 0px;
+              box-shadow: 0px 0px 2px;
+              transition: 0.2s all;
+              .submenu__link{
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: 300;
+                color: variables.$colorVerde;
+                text-align: start;
+              }
+
+              .submenu__img{
+                margin-top: 5px;
+                width: 100%;
+                height: 70px;
+              }
+            }
+
+            .submenu__item:hover{
+              background:variables.$colorAzulOscuro;
+            }
+          }
+
+          &:hover{        
+              .submenu{
+                visibility: visible;
+                transform: translateY(0px);
+                transform: translateX(10px);
+              }
+          }
+          
+        }
+
+        .contIcono:hover{
+          background:variables.$colorAzulOscuro;
+          .IconNombre{
+            color: variables.$colorVerde;
+            font-size: 20px;
+          }
+        }
+      }
+
+      .contNavegadorJS{
+        transform: translateX(0px);
+      }
+
+      //BLOCK BTN RESPONSIVE
+      .header_btnResponsive{
+        /*width: 40px;
+        height: 40px;
+        background: rgb(31, 122, 122); */
+        display: block;
+      }
+  }
+
+  .contHeader_js{
+    box-shadow: 0px 2px 20px variables.$colorVerde;
+  }
+
+  
+}
+
+
+
+
+
+
+
+

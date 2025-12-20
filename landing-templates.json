@@ -1,0 +1,156 @@
+{
+    "landing":[
+        {
+            "id_block1":1,
+            "title1":"Restaurante",
+            "descripcion1":"Landing page restaurant dinámico desarrollada con HTML, CSS Y JavaScript, está estructurada con una base formada con CSS GRID, consta de un menú vertical fijado flotante, header (encabezado), 4 secciones y el footer (pie de página), botones personalizados, formulario de contacto con validación, preloader personalizado y botón de subida.",
+            "image1": "./img/image_restaurant.jpg",
+            "tip1D": "- Proyecto Restaurante.",
+
+
+
+
+            "id_block2":2,
+            "title2":"Veterinaria",
+            "descripcion2":"Landing page dinámico desarrollado para consultorio veterinario, cuenta con un menú de navegación, 4 secciones, footer (pie de página), scroolling personalizado, slader, botón de subida, integración a enlaces externos, formulario de contacto con validación, el proyecto se adapta a dispositivos de escritorio (Desktop), tablet y móviles.",
+            "image2": "./img/image_veterinaria.jpg",
+            "tip2D": "- Proyecto Veterinaria.",
+
+            
+            
+            "subtitleResp": "Diseño responsivo:",
+            "subtitleProy": "Tipo de proyecto:",
+
+            "dis1":"- Desktop: 1440px", 
+            "dis2":"- Tablet: 720px",
+            "dis3":"- Móvil: 320px",
+
+            "tip1A": "- Página informativa.",
+            "tip1B": "- página de aterrizaje.",
+            "tip1C": "- landing page."
+        },
+        
+        {
+            "id_block1":3,
+            "title1":"Pastelería",
+            "descripcion1":"Landing page pastelería estructurada con una base construida con CSS GRID, header (Encabezado), 4 secciones y el footer (pie). El proyecto se adapta a dispositivos de escritorio (Desktop), tablet y móviles.",
+            "image1": "./img/image_pasteleria.jpg",
+            "tip1D": "- Proyecto Pastelería.",
+
+
+
+            "id_block2":4,
+            "title2":"Gamer",
+            "descripcion2":"Landing page Gamer desarrollada para proyecto Gamer (página de videojuegos) totalmente personalizada desde cero con HTML, CSS, SASS ,JavaScript, PHP y archivos JSON para extracción de datos, cuenta con un menú de navegación, integración a enlaces externos, botones, formulario de contacto con validación direccionado a una cuenta de correo electrónico, botón de desplazamiento de subida y es adaptable a dispositivos de escritorio (Desktop), tablet y móvil.",
+            "image2": "./img/image_portal_gamer.jpg",
+            "tip2D": "- Proyecto Gamer.",
+
+
+ 
+            "subtitleResp": "Diseño responsivo:",
+            "subtitleProy": "Tipo de proyecto:",
+
+            "dis1":"- Desktop: 1440px", 
+            "dis2":"- Tablet: 720px",
+            "dis3":"- Móvil: 320px",
+
+            "tip1A": "- Página informativa.",
+            "tip1B": "- página de aterrizaje.",
+            "tip1C": "- landing page."
+        }
+    ],
+    
+    "landing2":[
+        {
+            "id_block1":5,
+            "title1":"Visual Designer",
+            "descripcion1":"Témplate visual designer, desarrollado para integrar a un proyecto de tipo portafolio, construida con HTML, CSS GRID, FLEXBOX y JavaScript totalmente personalizada, cuenta con un menú de navegación, integración a enlaces externos, integración a redes sociales, 3 secciones, pie de página, botón de desplazamiento (subida), scroll personalizado y es adaptable a dispositivos de escritorio (Desktop), tablet y móvil.",
+            "image1": "./img/image_visual_designer.jpg",
+            "tip1D": "- Proyecto Visual Designer.",
+
+
+
+
+            "id_block2":6,
+            "title2":"Visit Tokio",
+            "descripcion2":"Plantilla desarrollada para proyecto portafolio, totalmente personalizada desde cero con HTML, CSS, SASS ,JavaScript, PHP y archivos JSON para extracción de datos, cuenta con un menú de navegación, 4 secciones, integración a enlaces externos, botones flotantes, formulario de contacto con validación direccionado a una cuenta de correo electrónico, botón de desplazamiento de subida, 2 páginas y es adaptable a dispositivos de escritorio (Desktop), tablet y móvil.",
+            "image2": "./img/image_visit_tokio.jpg",
+            "tip2D": "- Proyecto Visit Tokio.", 
+
+            
+            
+            "subtitleResp": "Diseño responsivo:",
+            "subtitleProy": "Tipo de proyecto:",
+
+            "dis1":"- Desktop: 1440px", 
+            "dis2":"- Tablet: 720px",
+            "dis3":"- Móvil: 320px",
+
+            "tip1A": "- Página informativa.",
+            "tip1B": "- página de aterrizaje.",
+            "tip1C": "- landing page."
+        },
+
+        {
+            "id_block1":7,
+            "title1":"Template Halloween",
+            "descripcion1":"Plantilla informativa con temática de Halloween desarrollada con HTML, CSS y JS. Cuenta con un menú de navegación, botones, video integrado, scrooll personalizado y distintas secciones, es adaptable a dispositivos de escritorio (Desktop), tablet y móvil.",
+            "image1": "./img/TEMPLATE-HALLOWEEN.jpg",
+            "tip1D": "- Proyecto Halloween.",
+
+
+
+
+            "id_block2":8,
+            "title2":"Template Fashion",
+            "descripcion2":"Página informativa desarrollada para negocios de diseño de modas, cuenta con un menú de navegación, banner principal, imágenes, secciones, slader de productos con sensibilidad touch screen, es adaptable a dispositivos de escritorio (Desktop), tablet y móvil.",
+            "image2": "./img/templateFashion.jpg",
+            "tip2D": "- Proyecto diseño y modas ", 
+
+            
+            
+            "subtitleResp": "Diseño responsivo:",
+            "subtitleProy": "Tipo de proyecto:",
+
+            "dis1":"- Desktop: 1440px", 
+            "dis2":"- Tablet: 720px",
+            "dis3":"- Móvil: 320px",
+
+            "tip1A": "- Página informativa.",
+            "tip1B": "- página de aterrizaje.",
+            "tip1C": "- landing page."
+        }
+    ],
+
+    "landing3":[
+        {
+            "id_block1":9,
+            "title1":"Template Financial",
+            "descripcion1":"Página informativa desarrollada para empresa corporativa, cuenta con un menú de navegación, banner principal, imágenes, 2 secciones, slader de productos con sensibilidad touch screen.",
+            "image1": "./img/template-financial.jpg",
+            "tip1D": "- Plantilla corporativa.",
+
+
+
+            
+            "id_block2":10,
+            "title2":"En construcción",
+            "descripcion2":"¡Próximo proyecto saldrá en un mes!",
+            "image2": "./img/EN-DESARROLLO.png",
+            "tip2D": "", 
+
+            
+            
+            "subtitleResp": "Diseño responsivo:",
+            "subtitleProy": "Tipo de proyecto:",
+
+            "dis1":"- Desktop: 1440px", 
+            "dis2":"- Tablet: 720px",
+            "dis3":"- Móvil: 320px",
+
+            "tip1A": "- Página informativa.",
+            "tip1B": "- página de aterrizaje.",
+            "tip1C": "- landing page."
+        }
+    ]
+}

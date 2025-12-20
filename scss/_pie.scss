@@ -1,0 +1,133 @@
+@use "variables";
+.contPie{
+    width: 100%;
+    padding: 30px 0px;
+    background:variables.$colorNegro;
+    .contPie_cont{
+        width: 100%;
+        padding: 10px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .boxing1{
+            width:85px;
+            height: 40px;
+            background-image: url(../img/LOGO/Nuevo\ Logo.png);
+            background-size: 100% 100%;
+            margin-left: 20px;
+
+        }
+    
+        .contPie_ul{
+            width:380px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+            .contPie_ul_li{
+                list-style: none;
+                padding: 2px;
+                transform: skew(-5deg);
+                .contPie_ul_li_a{
+                    color: white;
+                    font-weight: 100;
+                    font-size: 14px;
+                }
+                .contPie_ul_li_a:hover{
+                    color: variables.$colorVerde;
+                }
+            }
+        }
+    }
+    
+
+    .caja_pie{
+        width: 100%;
+        height: 50px;
+        margin-top: 20px;
+
+        .caja_pie_derechos_text{
+          font-size: 14px;
+          color: white;
+          text-align: center;
+          line-height: 16px;
+          font-weight: 100;
+
+          .ap{
+            color: variables.$colorVerde;
+            font-size: 12px;
+
+          }
+        }
+    }   
+    
+}
+
+
+
+@media (min-width:320px) and (max-width:640px){
+    .contPie{
+        width: 100%;
+        padding: 30px 0px;
+        background:variables.$colorNegro;
+        .contPie_cont{
+            width: 100%;
+            padding: 10px 0px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            .boxing1{
+                width:100px;
+                height: 50px;
+                background-image: url(../img/LOGO/Nuevo\ Logo.png);
+                background-size: 100% 100%;
+                margin-left: 20px;
+
+            }
+        
+            .contPie_ul{
+                width: 200px;
+                display: flex;
+                flex-direction:column;
+                justify-content: space-around;
+                align-items: center;
+
+                .contPie_ul_li{
+                    list-style: none;
+                    padding: 0px;
+                    line-height: 20px;
+
+                    .contPie_ul_li_a{
+                        color: white;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        
+    
+        .boxing2{
+            width: 100%;
+            margin-top:40px;
+            .contFooter_derechos_text{
+              font-size: 14px;
+              color: white;
+              text-align: center;
+              line-height: 16px;
+              font-weight: 100;
+              .ap{
+                color: variables.$colorVerde;
+                font-size: 12px;
+    
+              }
+            }
+        }   
+        
+    }
+    
+}
+

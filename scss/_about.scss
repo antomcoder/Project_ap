@@ -1,0 +1,867 @@
+@use "variables";
+
+#cont_descripcion_foto{
+    width: 100%;
+    //background:variables.$colorAzul;
+    background-size:100% 500px;
+    background-repeat:no-repeat ;
+    position: relative;
+    .contBase{
+        width: 100%;
+        padding:50px 0px;
+        background:variables.$colorAzul;
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        //align-items: center;
+        .contenedor_izq{
+            width:50%;
+            height: 650px;
+            //margin-left: 20px;
+            margin-left: 50px;
+            position: relative;
+            .titulo_acerca{
+                width: 500px;
+                height: 400px;
+                font-family: "Oswald", sans-serif;
+                font-weight: 700;
+                margin-top: 30px    ;
+                font-size: variables.$fuenteTitles;
+                color: variables.$colorVerde ; 
+                line-height: 180px;
+                letter-spacing: variables.$letterSpacing; 
+                position: absolute;
+                top: 0;
+                left: -500px;
+                animation-name: moverTitleAbout;
+                animation-duration:2s;
+                animation-fill-mode:both;
+                transform: skewX(-5deg);
+
+            }
+            @keyframes moverTitleAbout {
+                from{
+                   left: -500px;
+                   opacity: 0;
+                   visibility: hidden;
+
+                }to{
+                   left: 0;
+                   visibility: visible;
+                }
+            }
+            
+            .contenedorIzq_parrBtn{
+                width: 500px;
+                height: 270px;
+                position: absolute;
+                left: 120px;
+                top:250px;
+                .descripcion_acerca{
+                    text-align:start;
+                    color:white;
+                    
+
+                }
+                .btnAcerca{
+                    width: 200px;
+                    border: none;
+                    border: 2px solid transparent;
+                    border-bottom:2px solid variables.$colorVerde;
+                    padding: 5px;
+                    background:variables.$colorAzulTransparente;
+                    transform: skew(-5deg);
+                    color: white;
+                    font-weight: 300;
+                    margin-top: 20px;
+                    margin-left: 10px;
+                    float: right;
+                    transition-duration: 0.3s;
+                    transition-timing-function: ease;
+                    cursor: pointer;
+                    .iconAB{
+                        margin-left: 5px;
+                        font-size: 25px;
+                        color: variables.$colorVerde;
+                    }
+                }
+                .btnAcerca:hover{
+                    background:rgba(255, 255, 255, 0.075);
+                    border: 2px solid variables.$colorVerde;
+                    //color: $colorBlack;
+                }
+            }
+
+        }
+        
+        .contenedor_der{
+            width: 40%;
+            //margin-right: 50px;
+            background:variables.$colorAzul;
+            display: flex;
+            flex-direction: column;    
+            justify-content: center;
+            align-items: center;
+            .contenedor_der_image{
+                width: 380px;
+                height: 380px;
+                border:1px solid variables.$colorVerde;
+                border-radius:5px;
+                background: variables.$colorVerde;
+                box-shadow: -18px 18px 1px variables.$colorVerdeTrans;
+                overflow: hidden;
+                transform: skew(-3deg);
+                transition: 0.1s all linear;
+
+
+                .foto{
+                    mix-blend-mode:multiply;
+                    
+                }    
+            }
+            .contenedor_der_image:hover{
+                //border:5px double variables.$colorVerde;
+                border:1px solid variables.$colorVerde;
+                .foto{
+                    mix-blend-mode:normal;    
+                }   
+            }
+            .contenedor_der_name{
+                margin: -60px auto;
+                width: 200px;
+                background: variables.$colorAzulTransparente;
+                padding: 5px 0px;
+                font-weight: 300;
+                color: variables.$colorVerde;
+                text-align: center;
+                transform: skew(-5deg);
+            }
+            
+        } 
+    }
+
+    .cont_descripcion_foto_gradient{
+        width: 300px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, variables.$colorAzul 0%, variables.$colorAzul 15%,transparent);
+    }
+   
+}
+    
+
+/*********************************************************
+*************---------------------------------------/*/
+
+@media (min-width:1025px) and (max-width:1200px){
+    #cont_descripcion_foto{
+        width: 100%;
+        padding: 0px 0px;
+        background-size:100% 500px;
+        background-repeat:no-repeat ;
+        position: relative;
+        .contBase{
+            width: 100%;
+            padding:50px 0px;
+            background:variables.$colorAzul;
+            display: flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            //align-items: center;
+            .contenedor_izq{
+                width:50%;
+                height: 700px;
+                margin-left: 30px;
+                position: relative;
+                .titulo_acerca{
+                    width: 500px;
+                    height: 400px;
+                    margin-top: 30px;
+                    font-size: 150px;
+                    color: variables.$colorVerde ; 
+                    line-height: 180px;
+                    letter-spacing: variables.$letterSpacing; 
+                    position: absolute;
+                    top: 0;
+                    left: -500px;
+                    animation-name: moverTitleAbout;
+                    animation-duration: 3s;
+                    animation-fill-mode:both;
+                }
+                
+                
+                .contenedorIzq_parrBtn{
+                    width: 83%;
+                    height: 550px;
+                    position: absolute;
+                    left: 100px;
+                    bottom:initial;
+                    top: 220px;
+                 
+                    .descripcion_acerca{
+                        text-align: justify;
+                        color: rgb(255, 255, 255);
+                        font-size: 16px;
+                        .formms{
+                            color: variables.$colorVerde;
+                        }    
+                    }
+                    .btnAcerca{
+                        width: 200px;
+                        border: none;
+                        border: 2px solid transparent;
+                        border-bottom:2px solid variables.$colorVerde;
+                        padding: 5px;
+                        background: variables.$colorAzulTransparente;
+                        transform: skew(-5deg);
+                        color: white;
+                        font-size: 14px;
+                        font-weight: 300;
+                        margin-top: 20px;
+                        margin-left: 10px;
+                        float: right;
+                        transition-duration: 0.3s;
+                        transition-timing-function: ease;
+                        cursor: pointer;
+                        .iconAB{
+                            margin-left: 5px;
+                            font-size: 25px;
+                            color: variables.$colorVerde;
+                        }
+                    }
+                    .btnAcerca:hover{
+                        background:rgba(255, 255, 255, 0.075);
+                        border: 2px solid variables.$colorVerde;
+                        //color: $colorBlack;
+                    }
+                }
+                
+            }
+            .contenedor_der{
+                width: 40%;
+                background: variables.$colorAzul;
+                margin-right: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: 1s all;
+                .contenedor_der_image{
+                    width: 350px;
+                    height: 350px;
+                    border:1px solid variables.$colorVerde;
+                    border-radius:5px;
+                    background: variables.$colorVerde;
+                    box-shadow: -18px 18px 1px variables.$colorVerdeTrans;
+                    overflow: hidden;
+                    transform: skew(-3deg);
+                    transition: 0.1s all linear;
+    
+    
+                    .foto{
+                        mix-blend-mode:multiply;
+                        
+                    }    
+                }
+                .contenedor_der_image:hover{
+                    //border:5px double variables.$colorVerde;
+                    border:1px solid variables.$colorVerde;
+                    .foto{
+                        mix-blend-mode:normal;    
+                    }   
+                }
+                .contenedor_der_name{
+                    margin: -60px auto;
+                    width: 200px;
+                    background: variables.$colorAzulTransparente;
+                    padding: 5px 0px;
+                    color: variables.$colorVerde;
+                    text-align: center;
+                    transform: skew(-5deg);
+                }
+            } 
+        }
+    
+        .cont_descripcion_foto_gradient{
+            width: 300px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, variables.$colorAzul 0%, variables.$colorAzul 15%,transparent);
+        }
+       
+    } 
+}
+
+
+/*********************************************************
+*************---------------------------------------/*/
+
+@media (min-width:770px) and (max-width:1024px){
+    #cont_descripcion_foto{
+        width: 100%;
+        padding: 0px 0px;
+        background-size:100% 500px;
+        background-repeat:no-repeat ;
+        position: relative;
+        .contBase{
+            width: 100%;
+            padding:50px 0px;
+            background:variables.$colorAzul;
+            display: flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+
+            justify-content: space-between;
+            //align-items: center;
+            .contenedor_izq{
+                width:90%;
+                height: auto;
+                margin: 10px auto;
+                padding: 10px 0px;
+                position: relative;
+                .titulo_acerca{
+                    width: auto;
+                    height: auto;
+                    margin-top: initial;
+                    font-size: 120px;
+                    color: variables.$colorVerde ; 
+                    line-height: 180px;
+                    letter-spacing: variables.$letterSpacing; 
+                    position: initial;
+                    top: initial;
+                    left: initial;
+                    animation-name: moverTitleAbout;
+                    animation-duration: 3s;
+                    animation-fill-mode:both;
+                }
+                
+                
+                .contenedorIzq_parrBtn{
+                    width: 90%;
+                    margin: 20px auto;
+                    height: auto;
+                    position: relative;
+                    left: initial;
+                    bottom:initial;
+                    top: initial;
+                 
+                    .descripcion_acerca{
+                        color: rgb(255, 255, 255);
+                        font-size: 16px;
+                        .formms{
+                            color: variables.$colorVerde;
+                        }    
+                    }
+                    .btnAcerca{
+                        width: 200px;
+                        border: none;
+                        border: 2px solid transparent;
+                        border-bottom:2px solid variables.$colorVerde;
+                        padding: 5px;
+                        background: variables.$colorAzulTransparente;
+                        transform: skew(-5deg);
+                        color: white;
+                        font-size: 14px;
+                        font-weight: 300;
+                        margin-top: initial;
+                        margin-left: initial;
+                        float: right;
+                        position: absolute;
+                        bottom: -180px;
+                        right: 80px;
+                        transition-duration: 0.3s;
+                        transition-timing-function: ease;
+                        cursor: pointer;
+                        .iconAB{
+                            margin-left: 5px;
+                            font-size: 25px;
+                            color: variables.$colorVerde;
+                        }
+                    }
+                    .btnAcerca:hover{
+                        background:rgba(255, 255, 255, 0.075);
+                        border: 2px solid variables.$colorVerde;
+                        //color: $colorBlack;
+                    }
+                }
+                
+            }
+            .contenedor_der{
+                width:auto;
+                padding: 10px;
+                background:transparent;
+                margin-left:calc(40% - 180px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: 1s all;
+                .contenedor_der_image{
+                    width: 250px;
+                    height: 250px;
+                    border:1px solid variables.$colorVerde;
+                    border-radius:5px;
+                    background: variables.$colorVerde;
+                    box-shadow: -18px 18px 1px variables.$colorVerdeTrans;
+                    overflow: hidden;
+                    transform: skew(-2deg);
+                    transition: 0.1s all linear;
+    
+                    .foto{
+                        mix-blend-mode:multiply;
+                        
+                    }    
+                }
+
+                .contenedor_der_name{
+                    margin: -60px auto;
+                    width: 200px;
+                    background: variables.$colorAzulTransparente;
+                    padding: 5px 0px;
+                    color: variables.$colorVerde;
+                    text-align: center;
+                    transform: skew(-5deg);
+                }
+            } 
+        }
+    
+        .cont_descripcion_foto_gradient{
+            display: none;
+        }
+       
+    } 
+}
+
+
+
+/*********************************************************
+*************---------------------------------------/*/
+
+@media (min-width:641px) and (max-width:769px){
+    #cont_descripcion_foto{
+        width: 100%;
+        padding: 0px 0px;
+        background-size:100% 500px;
+        background-repeat:no-repeat ;
+        position: relative;
+        .contBase{
+            width: 100%;
+            padding:50px 0px;
+            background:variables.$colorAzul;
+            display: flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            //align-items: center;
+            .contenedor_izq{
+                width:90%;
+                height: auto;
+                margin: 10px auto;
+                padding: 10px 0px;
+                position: relative;
+                .titulo_acerca{
+                    width: auto;
+                    height: auto;
+                    margin-top: initial;
+                    font-size: 120px;
+                    color: variables.$colorVerde ; 
+                    line-height: 180px;
+                    letter-spacing: variables.$letterSpacing; 
+                    position: initial;
+                    top: initial;
+                    left: initial;
+                    animation-name: moverTitleAbout;
+                    animation-duration: 3s;
+                    animation-fill-mode:both;
+                }
+                
+                
+                .contenedorIzq_parrBtn{
+                    width: 90%;
+                    margin: 20px auto;
+                    height: auto;
+                    position: relative;
+                    left: initial;
+                    bottom:initial;
+                    top: initial;
+                 
+                    .descripcion_acerca{
+                        color: rgb(255, 255, 255);
+                        font-size: 16px;
+                        .formms{
+                            color: variables.$colorVerde;
+                        }    
+                    }
+                    .btnAcerca{
+                        width: 200px;
+                        border: none;
+                        border: 2px solid transparent;
+                        border-bottom:2px solid variables.$colorVerde;
+                        padding: 5px;
+                        background: variables.$colorAzulTransparente;
+                        transform: skew(-5deg);
+                        color: white;
+                        font-size: 14px;
+                        font-weight: 300;
+                        margin-top: initial;
+                        margin-left: initial;
+                        float: right;
+                        position: absolute;
+                        bottom: -180px;
+                        right: 20px;
+                        transition-duration: 0.3s;
+                        transition-timing-function: ease;
+                        cursor: pointer;
+                        .iconAB{
+                            margin-left: 5px;
+                            font-size: 25px;
+                            color: variables.$colorVerde;
+                        }
+                    }
+                    .btnAcerca:hover{
+                        background:rgba(255, 255, 255, 0.075);
+                        border: 2px solid variables.$colorVerde;
+                        //color: $colorBlack;
+                    }
+                }
+                
+            }
+            .contenedor_der{
+                width:auto;
+                padding: 10px;
+                background:transparent;
+                margin-left:calc(40% - 180px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: 1s all;
+                .contenedor_der_image{
+                    width: 230px;
+                    height: 230px;
+                    border:1px solid variables.$colorVerde;
+                    border-radius:5px;
+                    background: variables.$colorVerde;
+                    box-shadow: -18px 18px 1px variables.$colorVerdeTrans;
+                    overflow: hidden;
+                    transform: skew(-2deg);
+                    transition: 0.1s all linear;
+    
+                    .foto{
+                        mix-blend-mode:multiply;
+                        
+                    }    
+                }
+
+                .contenedor_der_name{
+                    margin: -60px auto;
+                    width: 200px;
+                    background: variables.$colorAzulTransparente;
+                    padding: 5px 0px;
+                    color: variables.$colorVerde;
+                    text-align: center;
+                    transform: skew(-5deg);
+                }
+            } 
+        }
+    
+        .cont_descripcion_foto_gradient{
+            display: none;
+        }
+       
+    } 
+}
+
+
+
+
+/*********************************************************
+*************---------------------------------------/*/
+
+@media (min-width:481px) and (max-width:640px){
+    #cont_descripcion_foto{
+        width: 100%;
+        padding: 0px 0px;
+        background-size:100% 500px;
+        background-repeat:no-repeat ;
+        position: relative;
+        .contBase{
+            width: 100%;
+            padding:50px 0px;
+            background:variables.$colorAzul;
+            display: flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            //align-items: center;
+            .contenedor_izq{
+                width:90%;
+                height: auto;
+                margin: 10px auto;
+                padding: 10px 0px;
+                position: relative;
+                .titulo_acerca{
+                    width: 100%;
+                    height: auto;
+                    margin-top:initial;
+                    font-size: 100px;
+                    color: variables.$colorVerde ; 
+                    line-height: 180px;
+                    letter-spacing: variables.$letterSpacing; 
+                    position: initial;
+                    top: initial;
+                    left: initial;
+                    animation-name: moverTitleAbout;
+                    animation-duration: 3s;
+                    animation-fill-mode:both;
+                }
+                
+                
+                .contenedorIzq_parrBtn{
+                    width: 100%;
+                    margin: 10px auto;
+                    height: auto;
+                    position: relative;
+                    left: initial;
+                    bottom:initial;
+                    top: initial;
+                    .descripcion_acerca{
+                        color: rgb(255, 255, 255);
+                        font-size: 16px;
+
+                        .formms{
+                            color: variables.$colorVerde;
+                        }    
+                    }
+
+                    .btnAcerca{
+                        width: 180px;
+                        border: none;
+                        border: 2px solid transparent;
+                        border-bottom:2px solid variables.$colorVerde;
+                        padding: 5px;
+                        background: variables.$colorAzulTransparente;
+                        transform: skew(-5deg);
+                        color: white;
+                        font-size: 14px;
+                        font-weight: 300;
+                        margin-top: initial;
+                        margin-left: initial;
+                        float: right;
+                        position: absolute;
+                        bottom: -180px;
+                        right: 10px;
+                        transition-duration: 0.3s;
+                        transition-timing-function: ease;
+                        cursor: pointer;
+                        .iconAB{
+                            margin-left: 5px;
+                            font-size: 25px;
+                            color: variables.$colorVerde;
+                        }
+                    }
+                    .btnAcerca:hover{
+                        background:rgba(255, 255, 255, 0.075);
+                        border: 2px solid variables.$colorVerde;
+                        //color: $colorBlack;
+                    }
+                }
+                
+            }
+            .contenedor_der{
+                width:100%;
+                padding: 10px;
+                margin:5px auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: 1s all;
+                .contenedor_der_image{
+                    width: 200px;
+                    height: 200px;
+                    margin-left: calc(10% - 240px);
+                    border:1px solid variables.$colorVerde;
+                    border-radius:5px;
+                    background: variables.$colorVerde;
+                    box-shadow: -18px 18px 1px variables.$colorVerdeTrans;
+                    overflow: hidden;
+                    transform: skew(-2deg);
+                    transition: 0.1s all linear;
+    
+                    .foto{
+                        mix-blend-mode:multiply;
+                        
+                    }    
+                }
+
+                .contenedor_der_name{
+                    margin: -60px auto;
+                    width: 100%;
+                    background: variables.$colorAzulTransparente;
+                    padding: 5px 0px;
+                    color: variables.$colorVerde;
+                    text-align: center;
+                    transform: skew(-5deg);
+                    font-size: 14px;
+                }
+            } 
+        }
+    
+        .cont_descripcion_foto_gradient{
+            display: none;
+        }
+       
+    } 
+}
+
+
+
+
+/*********************************************************
+*************---------------------------------------/*/
+
+@media (min-width:320px) and (max-width:480px){
+    #cont_descripcion_foto{
+        width: 100%;
+        padding: 0px 0px;
+        background-size:100% 500px;
+        background-repeat:no-repeat ;
+        position: relative;
+        .contBase{
+            width: 100%;
+            padding:10px 0px;
+            background:variables.$colorAzul;
+            display: flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .contenedor_izq{
+                width:90%;
+                height: auto;
+                margin: 0px auto;
+                padding: 10px 0px;
+                position: relative;
+                .titulo_acerca{
+                    width: 100%;
+                    height: auto;
+                    margin-top:-15px;
+                    font-size: 100px;
+                    color: variables.$colorVerde ; 
+                    line-height: 180px;
+                    letter-spacing: variables.$letterSpacing; 
+                    position: initial;
+                    top: initial;
+                    left: initial;
+                    animation-name: moverTitleAbout;
+                    animation-duration: 3s;
+                    animation-fill-mode:both;
+                }
+                
+                
+                .contenedorIzq_parrBtn{
+                    width: 100%;
+                    margin: 0px auto;
+                    margin-top: -15px;
+                    margin-bottom: 20px;
+                    height: auto;
+                    position: relative;
+                    left: initial;
+                    bottom:initial;
+                    top: initial;
+                    .descripcion_acerca{
+                        color: rgb(255, 255, 255);
+
+                        .formms{
+                            color: variables.$colorVerde;
+                        }    
+                    }
+
+                    .btnAcerca{
+                        width: 180px;
+                        border: none;
+                        border: 2px solid transparent;
+                        border-bottom:2px solid variables.$colorVerde;
+                        padding: 5px;
+                        background: variables.$colorAzulTransparente;
+                        transform: skew(-5deg);
+                        color: white;
+                        font-weight: 300;
+                        margin-top: initial;
+                        margin-left: initial;
+                        float: right;
+                        position: absolute;
+                        bottom: -320px;
+                        right: calc(50% - 90px);
+                        transition-duration: 0.3s;
+                        transition-timing-function: ease;
+                        cursor: pointer;
+                        .iconAB{
+                            margin-left: 5px;
+                            font-size: 25px;
+                            color: variables.$colorVerde;
+                        }
+                    }
+                    .btnAcerca:hover{
+                        background:rgba(255, 255, 255, 0.075);
+                        border: 2px solid variables.$colorVerde;
+                        //color: $colorBlack;
+                    }
+                }
+                
+            }
+            .contenedor_der{
+                width:100%;
+                padding-top: 10px;
+                padding-bottom: 80px;
+                margin:5px auto;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                transition: 1s all;
+                .contenedor_der_image{
+                    width: 200px;
+                    height: 200px;
+                    margin-left: calc(55% - 240px);
+                    border:1px solid variables.$colorVerde;
+                    border-radius:5px;
+                    background: variables.$colorVerde;
+                    box-shadow: -18px 18px 1px variables.$colorVerdeTrans;
+                    overflow: hidden;
+                    transform: skew(-2deg);
+                    transition: 0.1s all linear;
+    
+                    .foto{
+                        mix-blend-mode:multiply;
+                        
+                    }    
+                }
+
+                .contenedor_der_name{
+                    margin: -60px auto;
+                    width: 100%;
+                    background: variables.$colorAzulTransparente;
+                    padding: 5px 0px;
+                    color: variables.$colorVerde;
+                    text-align: center;
+                    transform: skew(-5deg);
+                    font-size: 14px;
+                }
+            } 
+        }
+    
+        .cont_descripcion_foto_gradient{
+            display: none;
+        }
+       
+    } 
+}
+
+
+
+
