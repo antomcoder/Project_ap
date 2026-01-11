@@ -302,7 +302,7 @@
 .CONTENT-PRINCIPAL .CONTENT-PARTICULAS .contParticulas {
   width: 100%;
   max-width: 1600px;
-  height: 500px;
+  height: 100%;
   margin: auto;
   background-image: url(../img/desarrollando.jpg);
   background-size: 100% 100%;
@@ -325,12 +325,12 @@
 .CONTENT-PRINCIPAL .CONTENT-PARTICULAS .contParticulas #particles-js .titulo_principal {
   width: auto;
   padding: 15px 0px;
-  font-size: 250px;
+  font-size: calc(230px - 20%);
   transform: skewX(-5deg);
   line-height: 130px;
   color: #060f1d;
   position: absolute;
-  top: 120px;
+  top: 70px;
   font-family: "Oswald", sans-serif;
   font-weight: 700;
   text-shadow: 1px 4px 1px rgb(255, 255, 255);
@@ -354,7 +354,7 @@
   font-weight: 300;
   transform: skewX(-5deg);
   position: absolute;
-  top: 370px;
+  top: 330px;
   font-family: Poppins;
 }
 .CONTENT-PRINCIPAL .CONTENT-PARTICULAS .contParticulas #particles-js .subtitle .front_css_js {
@@ -368,7 +368,7 @@
   width: 400px;
   padding: 0px;
   position: absolute;
-  top: 450px;
+  top: 370px;
 }
 .CONTENT-PRINCIPAL .CONTENT-PARTICULAS .contParticulas #particles-js .particles__menu .particles__ul {
   padding: 4px 0px;
@@ -396,11 +396,12 @@
   width: 90%;
   background: rgba(5, 11, 32, 0.7764705882);
   position: absolute;
-  bottom: 15px;
+  bottom: 25px;
 }
 .CONTENT-PRINCIPAL .CONTENT-PARTICULAS .contParticulas #particles-js .contFooter .contFooter_cuadroBase {
-  width: 60%;
+  width: 80%;
   margin: auto;
+  margin-bottom: 30px;
   padding: 3px 0px;
   display: flex;
   flex-wrap: wrap;
@@ -410,9 +411,12 @@
 }
 .CONTENT-PRINCIPAL .CONTENT-PARTICULAS .contParticulas #particles-js .contFooter .contFooter_cuadroBase .contFooter_cuadroBase_caja {
   background: transparent;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .CONTENT-PRINCIPAL .CONTENT-PARTICULAS .contParticulas #particles-js .contFooter .contFooter_cuadroBase .contFooter_cuadroBase_caja .IconRed {
-  font-size: 25px;
+  font-size: 30px;
   color: #56fbd3;
   transform: rotateY(25deg);
   transition: all 0.2s;
@@ -423,7 +427,7 @@
   cursor: pointer;
 }
 .CONTENT-PRINCIPAL .CONTENT-PARTICULAS .contParticulas #particles-js .contFooter .contFooter_cuadroBase .contFooter_cuadroBase_caja .caja__parra {
-  font-size: 14px;
+  font-size: 16px;
   color: white;
   margin-left: 5px;
 }
@@ -440,7 +444,7 @@
   .CONTENT-PRINCIPAL .CONTENT-PARTICULAS .contParticulas {
     width: 100%;
     max-width: 1440px;
-    height: 500px;
+    height: 100%;
     margin: auto;
     background-image: url(../img/desarrollando.jpg);
     background-size: 100% 100%;
@@ -577,7 +581,7 @@
   .CONTENT-PRINCIPAL .CONTENT-PARTICULAS .contParticulas {
     width: 100%;
     max-width: 1440px;
-    height: 500px;
+    height: 100%;
     margin: auto;
     background-image: url(../img/desarrollando.jpg);
     background-size: 100% 100%;
@@ -705,7 +709,7 @@
 }
 /*****************************************************************************
 -----------------------------------------------------------*/
-@media (min-width: 350px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .CONTENT-PRINCIPAL {
     background: transparent;
   }
@@ -715,7 +719,7 @@
   .CONTENT-PRINCIPAL .CONTENT-PARTICULAS .contParticulas {
     width: 100%;
     max-width: 1440px;
-    height: 500px;
+    height: 100%;
     margin: auto;
     background-image: url(../img/desarrollando.jpg);
     background-size: 100% 100%;
@@ -944,6 +948,7 @@ html {
   height: 650px;
   margin-left: 50px;
   position: relative;
+  background: yellow;
 }
 #cont_descripcion_foto .contBase .contenedor_izq .titulo_acerca {
   width: 500px;
@@ -2730,7 +2735,6 @@ a {
   grid-template-columns: 50px 1fr 300px;
   grid-template-rows: auto;
   grid-template-areas: "HEADER                 HEADER               HEADER" "BARS_VERTICLE          SECTION_PROYECTS     SIDEBAR_LANDING" "BARS_VERTICLE          SECTION_PROYECTS     SIDEBAR_LANDING" "BARS_VERTICLE          SECTION_PROYECTS     SIDEBAR_LANDING" "SIDEBAR                SIDEBAR              SIDEBAR_LANDING" "FOOTER                 FOOTER               FOOTER";
-  /**ESTA OCULTO*/
 }
 .CONTAINER_LANDING .contDowload {
   width: 100%;
@@ -2909,6 +2913,9 @@ a {
 .CONTAINER_LANDING .SECTION_PROYECTS .contentSection_blocks .contentSection_blocks_number:hover {
   background: #060f1d;
   color: #56fbd3;
+}
+.CONTAINER_LANDING {
+  /**ESTA OCULTO*/
 }
 .CONTAINER_LANDING .SIDEBAR {
   padding: 10px 0px;
