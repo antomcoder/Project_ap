@@ -941,14 +941,14 @@ html {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 #cont_descripcion_foto .contBase .contenedor_izq {
   width: 50%;
   height: 650px;
   margin-left: 50px;
   position: relative;
-  background: yellow;
+  background: rgba(128, 128, 128, 0.144);
 }
 #cont_descripcion_foto .contBase .contenedor_izq .titulo_acerca {
   width: 500px;
@@ -989,6 +989,8 @@ html {
 #cont_descripcion_foto .contBase .contenedor_izq .contenedorIzq_parrBtn .descripcion_acerca {
   text-align: start;
   color: white;
+  font-size: 18px;
+  line-height: 25px;
 }
 #cont_descripcion_foto .contBase .contenedor_izq .contenedorIzq_parrBtn .btnAcerca {
   width: 200px;
@@ -1000,7 +1002,7 @@ html {
   transform: skew(-5deg);
   color: white;
   font-weight: 300;
-  margin-top: 20px;
+  margin-top: 40px;
   margin-left: 10px;
   float: right;
   transition-duration: 0.3s;
@@ -1022,7 +1024,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  background: rgba(0, 128, 128, 0.244);
 }
 #cont_descripcion_foto .contBase .contenedor_der .contenedor_der_image {
   width: 380px;
