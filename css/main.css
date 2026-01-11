@@ -948,7 +948,6 @@ html {
   height: 650px;
   margin-left: 50px;
   position: relative;
-  background: rgba(128, 128, 128, 0.144);
 }
 #cont_descripcion_foto .contBase .contenedor_izq .titulo_acerca {
   width: 500px;
@@ -1024,7 +1023,6 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: rgba(0, 128, 128, 0.244);
 }
 #cont_descripcion_foto .contBase .contenedor_der .contenedor_der_image {
   width: 380px;
@@ -1115,9 +1113,7 @@ html {
     top: 220px;
   }
   #cont_descripcion_foto .contBase .contenedor_izq .contenedorIzq_parrBtn .descripcion_acerca {
-    text-align: justify;
     color: rgb(255, 255, 255);
-    font-size: 16px;
   }
   #cont_descripcion_foto .contBase .contenedor_izq .contenedorIzq_parrBtn .descripcion_acerca .formms {
     color: #56fbd3;
@@ -1199,7 +1195,7 @@ html {
 }
 /*********************************************************
 *************---------------------------------------/*/
-@media (min-width: 770px) and (max-width: 1024px) {
+@media (min-width: 771px) and (max-width: 1024px) {
   #cont_descripcion_foto {
     width: 100%;
     padding: 0px 0px;
@@ -1249,7 +1245,6 @@ html {
   }
   #cont_descripcion_foto .contBase .contenedor_izq .contenedorIzq_parrBtn .descripcion_acerca {
     color: rgb(255, 255, 255);
-    font-size: 16px;
   }
   #cont_descripcion_foto .contBase .contenedor_izq .contenedorIzq_parrBtn .descripcion_acerca .formms {
     color: #56fbd3;
@@ -1279,10 +1274,6 @@ html {
     margin-left: 5px;
     font-size: 25px;
     color: #56fbd3;
-  }
-  #cont_descripcion_foto .contBase .contenedor_izq .contenedorIzq_parrBtn .btnAcerca:hover {
-    background: rgba(255, 255, 255, 0.075);
-    border: 2px solid #56fbd3;
   }
   #cont_descripcion_foto .contBase .contenedor_der {
     width: auto;
@@ -1373,7 +1364,6 @@ html {
   }
   #cont_descripcion_foto .contBase .contenedor_izq .contenedorIzq_parrBtn .descripcion_acerca {
     color: rgb(255, 255, 255);
-    font-size: 16px;
   }
   #cont_descripcion_foto .contBase .contenedor_izq .contenedorIzq_parrBtn .descripcion_acerca .formms {
     color: #56fbd3;
@@ -1419,8 +1409,8 @@ html {
     transition: 1s all;
   }
   #cont_descripcion_foto .contBase .contenedor_der .contenedor_der_image {
-    width: 230px;
-    height: 230px;
+    width: 240px;
+    height: 240px;
     border: 1px solid #56fbd3;
     border-radius: 5px;
     background: #56fbd3;
@@ -1497,7 +1487,6 @@ html {
   }
   #cont_descripcion_foto .contBase .contenedor_izq .contenedorIzq_parrBtn .descripcion_acerca {
     color: rgb(255, 255, 255);
-    font-size: 16px;
   }
   #cont_descripcion_foto .contBase .contenedor_izq .contenedorIzq_parrBtn .descripcion_acerca .formms {
     color: #56fbd3;
@@ -1624,6 +1613,7 @@ html {
   }
   #cont_descripcion_foto .contBase .contenedor_izq .contenedorIzq_parrBtn .descripcion_acerca {
     color: rgb(255, 255, 255);
+    font-size: 16px;
   }
   #cont_descripcion_foto .contBase .contenedor_izq .contenedorIzq_parrBtn .descripcion_acerca .formms {
     color: #56fbd3;

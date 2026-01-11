@@ -21,7 +21,6 @@
             //margin-left: 20px;
             margin-left: 50px;
             position: relative;
-            background: rgba(128, 128, 128, 0.144);
             .titulo_acerca{
                 width: 500px;
                 height: 400px;
@@ -103,7 +102,6 @@
             display: flex;
             flex-direction: column;    
             justify-content: center;
-            background: rgba(0, 128, 128, 0.244);
             .contenedor_der_image{
                 width: 380px;
                 height: 380px;
@@ -207,9 +205,7 @@
                     top: 220px;
                  
                     .descripcion_acerca{
-                        text-align: justify;
                         color: rgb(255, 255, 255);
-                        font-size: 16px;
                         .formms{
                             color: variables.$colorVerde;
                         }    
@@ -306,7 +302,7 @@
 /*********************************************************
 *************---------------------------------------/*/
 
-@media (min-width:770px) and (max-width:1024px){
+@media (min-width:771px) and (max-width:1024px){
     #cont_descripcion_foto{
         width: 100%;
         padding: 0px 0px;
@@ -357,7 +353,6 @@
                  
                     .descripcion_acerca{
                         color: rgb(255, 255, 255);
-                        font-size: 16px;
                         .formms{
                             color: variables.$colorVerde;
                         }    
@@ -388,11 +383,7 @@
                             color: variables.$colorVerde;
                         }
                     }
-                    .btnAcerca:hover{
-                        background:rgba(255, 255, 255, 0.075);
-                        border: 2px solid variables.$colorVerde;
-                        //color: $colorBlack;
-                    }
+                 
                 }
                 
             }
@@ -496,7 +487,6 @@
                  
                     .descripcion_acerca{
                         color: rgb(255, 255, 255);
-                        font-size: 16px;
                         .formms{
                             color: variables.$colorVerde;
                         }    
@@ -545,8 +535,8 @@
                 align-items: center;
                 transition: 1s all;
                 .contenedor_der_image{
-                    width: 230px;
-                    height: 230px;
+                    width: 240px;
+                    height: 240px;
                     border:1px solid variables.$colorVerde;
                     border-radius:5px;
                     background: variables.$colorVerde;
@@ -635,7 +625,6 @@
                     top: initial;
                     .descripcion_acerca{
                         color: rgb(255, 255, 255);
-                        font-size: 16px;
 
                         .formms{
                             color: variables.$colorVerde;
@@ -778,7 +767,7 @@
                     top: initial;
                     .descripcion_acerca{
                         color: rgb(255, 255, 255);
-
+                        font-size: 16px;
                         .formms{
                             color: variables.$colorVerde;
                         }    
